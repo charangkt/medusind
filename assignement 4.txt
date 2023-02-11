@@ -1,0 +1,66 @@
+						*********1NF***********			
+ClientNo	Cname	propertyno	paddress	rentstart	rentfinish	rent	ownerno	oname	
+									
+CR76	John kay	      PG4   6 lawrence,st.glasgow	01-Jul-00	31-Aug-01	350	CO40	Tina Murphy	
+CR76	John kay	      PG16  5 novar Dr.glasgow	01-Sep-02	01-Sep-02	450	C093	Tony shaw	
+CR56	Aline Stewan	PG4	6 lawrence,st.glasgow	01-Sep-99	10-Jun-00	350	C040	Tina Murphy	
+CR56	Aline Stewan	PG36	2 manor Rd,glasgow	10-Oct-00	03-Dec-01	370	C093	Tony Shaw	
+CR56	Aline Stewan	PG16	5 novar Dr.glasgow	01-Nov-02	01-Aug-01	450	C091	Tony shaw	
+									
+	after separate column 2NF  								
+	
+ClientNo	Cname
+	   
+CR76	 John kay
+CR56	 Aline Stewan
+
+						
+propertyno	paddress	rentstart	rentfinish	rent	ownerno	oname
+						
+PG4	6 lawrence,st.glasgow	01-Jul-00	31-Aug-01	350	CO40	Tina Murphy
+PG16	5 novar Dr.glasgow	01-Sep-02	01-Sep-02	450	C093	Tony shaw
+PG4	6 lawrence,st.glasgow	01-Sep-99	10-Jun-00	350	C040	Tina Murphy
+PG36	2 manor Rd,glasgow	10-Oct-00	03-Dec-01	370	C093	Tony Shaw
+PG16	5 novar Dr.glasgow	01-Nov-02	01-Aug-01	450	C091	Tony shaw
+ 
+			
+ClientNo	propertyno	rentstart	rentfinish
+CR76  	PG4	01-Jul-00	31-Aug-01   
+CR76	      PG16	01-Sep-02	01-Sep-02                   
+CR56	      PG4	01-Sep-99	10-Jun-00
+CR56	      PG36	10-Oct-00	03-Dec-01
+CR56   	PG16	01-Nov-02	01-Aug-01
+			
+			
+			
+                                                        *****3NF******			
+			
+ClientNo	Cname		
+			
+CR76	John kay		
+CR56	Aline Stewan		
+			
+			
+			
+ClientNo	propertyno	rentstart	rentfinish
+CR76	          PG4	01-Jul-00	31-Aug-01
+CR76	         PG16	01-Sep-02	01-Sep-02
+CR56           PG4	01-Sep-99	10-Jun-00
+CR56	        PG36	10-Oct-00	03-Dec-01
+CR56	        PG16	01-Nov-02	01-Aug-01
+			
+			
+propertyno	paddress	rent	ownerno
+PG4	6 lawrence,st.glasgow	350	CO40
+PG16	5 novar Dr.glasgow	450	C093
+PG4	6 lawrence,st.glasgow	350	C040
+PG36	2 manor Rd,glasgow	370	C093
+PG16	5 novar Dr.glasgow	450	C091
+			
+			
+ownerno	oname		
+			
+CO40	Tina Murphy		
+C093	Tony shaw		
+			
+
