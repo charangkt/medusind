@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="mvccredModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="movielist">
+    <Key>
+      <PropertyRef Name="mId" />
+    </Key>
+    <Property Name="mId" Type="int" Nullable="false" />
+    <Property Name="mname" Type="nvarchar" MaxLength="50" />
+    <Property Name="redate" Type="date" />
+  </EntityType>
+  <EntityContainer Name="mvccredModelStoreContainer">
+    <EntitySet Name="movielist" EntityType="Self.movielist" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

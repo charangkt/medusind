@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="mvccredModelStoreContainer" CdmEntityContainer="mvccredContext">
+    <EntitySetMapping Name="movielists">
+      <EntityTypeMapping TypeName="mvccredModel.movielist">
+        <MappingFragment StoreEntitySet="movielist">
+          <ScalarProperty Name="mId" ColumnName="mId" />
+          <ScalarProperty Name="mname" ColumnName="mname" />
+          <ScalarProperty Name="redate" ColumnName="redate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,34 @@
+﻿@model WebApplication11.movielist
+
+@{
+    ViewBag.Title = "Detail";
+}
+
+<h2>Detail</h2>
+
+<div>
+    <h4>movielist</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.mname)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.mname)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.redate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.redate)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.mId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
